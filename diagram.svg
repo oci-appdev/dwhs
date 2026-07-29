@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="880" viewBox="0 0 1240 880" font-family="Arial, sans-serif">
+<defs>
+  <linearGradient id="navy" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#26456e"/><stop offset="1" stop-color="#1f3864"/></linearGradient>
+  <linearGradient id="okeg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a86b8"/><stop offset="1" stop-color="#1c7293"/></linearGradient>
+  <linearGradient id="gpug" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6b46a0"/><stop offset="1" stop-color="#5b3a87"/></linearGradient>
+  <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.16"/></filter>
+  <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#555"/></marker>
+</defs>
+<rect width="1240" height="880" fill="#f7f9fc"/>
+
+<text x="620" y="40" text-anchor="middle" font-size="23" font-weight="bold" fill="#1f3864">DataWalk &amp; HyperScience on Oracle Cloud Infrastructure</text>
+<text x="620" y="64" text-anchor="middle" font-size="13.5" fill="#5a6b82">Isolated runtimes — DataWalk on OKE  ·  HyperScience on a dedicated GPU instance  ·  OC2 · FedRAMP High / IL4 · Ashburn</text>
+
+<!-- Users -->
+<rect x="28" y="370" width="122" height="150" rx="10" fill="#eef2f7" stroke="#8a9cb5" stroke-width="1.4"/>
+<text x="89" y="397" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1f3864">Government</text>
+<text x="89" y="414" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1f3864">Network</text>
+<circle cx="89" cy="450" r="15" fill="#8a9cb5"/><circle cx="89" cy="445" r="6" fill="#fff"/><path d="M77,463 Q89,451 101,463" fill="#fff"/>
+<text x="89" y="493" text-anchor="middle" font-size="10.5" fill="#5a6b82">Analysts</text>
+<line x1="150" y1="445" x2="200" y2="445" stroke="#555" stroke-width="2.4" marker-end="url(#ar)"/>
+<text x="175" y="436" text-anchor="middle" font-size="8.5" fill="#555" font-weight="bold">FastConnect</text>
+
+<!-- Region -->
+<rect x="206" y="96" width="1006" height="716" rx="14" fill="#fff" stroke="#2e75b6" stroke-width="2.4"/>
+<rect x="206" y="96" width="1006" height="44" rx="14" fill="url(#navy)"/>
+<rect x="206" y="124" width="1006" height="16" fill="url(#navy)"/>
+<text x="709" y="125" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#fff">OCI US Gov East — Ashburn  ·  OC2 Realm</text>
+
+<!-- VCN -->
+<rect x="226" y="156" width="966" height="576" rx="10" fill="#f4f8fc" stroke="#a9c7e8" stroke-width="1.4" stroke-dasharray="6 4"/>
+<text x="242" y="175" font-size="11" font-weight="bold" fill="#3a6ea5">Virtual Cloud Network — private subnets · network security groups</text>
+
+<!-- LB -->
+<rect x="252" y="186" width="914" height="34" rx="7" fill="#dce9f6" stroke="#7fa9d6" stroke-width="1.2"/>
+<text x="709" y="208" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f3864">Flexible Load Balancers  ·  OCI DNS traffic management</text>
+
+<!-- ===== DATAWALK COMPARTMENT ===== -->
+<rect x="252" y="238" width="450" height="392" rx="12" fill="#fbfdff" stroke="#1c7293" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="252" y="238" width="450" height="36" rx="12" fill="url(#okeg)"/>
+<rect x="252" y="260" width="450" height="14" fill="url(#okeg)"/>
+<text x="477" y="262" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#fff">Compartment: datawalk</text>
+
+<!-- OKE cluster box -->
+<rect x="272" y="290" width="410" height="248" rx="10" fill="#eaf5fa" stroke="#1c7293" stroke-width="1.8" stroke-dasharray="7 4"/>
+<rect x="288" y="300" width="196" height="24" rx="6" fill="#1c7293"/>
+<text x="386" y="317" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">OKE CLUSTER BOUNDARY</text>
+<text x="614" y="317" text-anchor="middle" font-size="10" fill="#1c7293" font-style="italic">DataWalk only</text>
+
+<text x="477" y="344" text-anchor="middle" font-size="10.5" fill="#5a6b82">Enhanced cluster (prod) · Basic clusters (dev / test)</text>
+
+<rect x="290" y="356" width="120" height="76" rx="7" fill="#fff" stroke="#1c7293" stroke-width="1.3"/>
+<text x="350" y="378" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#155a75">Worker Node</text>
+<text x="350" y="395" text-anchor="middle" font-size="9" fill="#5a6b82">DataWalk pods</text>
+<text x="350" y="411" text-anchor="middle" font-size="8.5" fill="#8a9cb5">Standard3.Flex</text>
+<rect x="417" y="356" width="120" height="76" rx="7" fill="#fff" stroke="#1c7293" stroke-width="1.3"/>
+<text x="477" y="378" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#155a75">Worker Node</text>
+<text x="477" y="395" text-anchor="middle" font-size="9" fill="#5a6b82">DataWalk pods</text>
+<text x="477" y="411" text-anchor="middle" font-size="8.5" fill="#8a9cb5">Standard3.Flex</text>
+<rect x="544" y="356" width="120" height="76" rx="7" fill="#fff" stroke="#1c7293" stroke-width="1.3"/>
+<text x="604" y="378" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#155a75">Worker Node</text>
+<text x="604" y="395" text-anchor="middle" font-size="9" fill="#5a6b82">DataWalk pods</text>
+<text x="604" y="411" text-anchor="middle" font-size="8.5" fill="#8a9cb5">Standard3.Flex</text>
+
+<rect x="290" y="446" width="374" height="26" rx="5" fill="#fff" stroke="#9cc0e6"/>
+<text x="477" y="464" text-anchor="middle" font-size="10" fill="#155a75">3-node pools across fault domains  ·  ~80 OCPU · 581 GB · CPU only</text>
+<rect x="290" y="480" width="374" height="26" rx="5" fill="#fdf3f2" stroke="#e0a49c"/>
+<text x="477" y="498" text-anchor="middle" font-size="10" font-weight="bold" fill="#a8443a">No GPU in this cluster</text>
+
+<!-- DW storage -->
+<rect x="272" y="550" width="196" height="64" rx="8" fill="#eaf2fb" stroke="#9cc0e6" stroke-width="1.2"/>
+<text x="370" y="571" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1c7293">Block Volume</text>
+<text x="370" y="589" text-anchor="middle" font-size="9.5" fill="#5a6b82">NVMe-backed PVCs</text>
+<text x="370" y="604" text-anchor="middle" font-size="9.5" fill="#5a6b82">11.4 TB graph store</text>
+<rect x="486" y="550" width="196" height="64" rx="8" fill="#eaf2fb" stroke="#9cc0e6" stroke-width="1.2"/>
+<text x="584" y="571" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1c7293">Object Storage</text>
+<text x="584" y="589" text-anchor="middle" font-size="9.5" fill="#5a6b82">live + backup buckets</text>
+<text x="584" y="604" text-anchor="middle" font-size="9.5" fill="#5a6b82">9 TB</text>
+
+<!-- ===== ISOLATION DIVIDER ===== -->
+<line x1="722" y1="248" x2="722" y2="622" stroke="#c0392b" stroke-width="2.4" stroke-dasharray="9 6"/>
+<rect x="668" y="410" width="108" height="52" rx="8" fill="#fff" stroke="#c0392b" stroke-width="1.6"/>
+<text x="722" y="430" text-anchor="middle" font-size="10" font-weight="bold" fill="#c0392b">NO SHARED</text>
+<text x="722" y="445" text-anchor="middle" font-size="10" font-weight="bold" fill="#c0392b">CLUSTER</text>
+<text x="722" y="457" text-anchor="middle" font-size="8" fill="#c0392b">isolation boundary</text>
+
+<!-- ===== HYPERSCIENCE COMPARTMENT ===== -->
+<rect x="742" y="238" width="424" height="392" rx="12" fill="#fdfbff" stroke="#5b3a87" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="742" y="238" width="424" height="36" rx="12" fill="url(#gpug)"/>
+<rect x="742" y="260" width="424" height="14" fill="url(#gpug)"/>
+<text x="954" y="262" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#fff">Compartment: hyperscience</text>
+
+<rect x="762" y="290" width="384" height="248" rx="10" fill="#f4eefb" stroke="#5b3a87" stroke-width="1.8" stroke-dasharray="7 4"/>
+<rect x="778" y="300" width="252" height="24" rx="6" fill="#5b3a87"/>
+<text x="904" y="317" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">DEDICATED GPU INSTANCE — NOT OKE</text>
+
+<rect x="782" y="336" width="344" height="86" rx="7" fill="#fff" stroke="#5b3a87" stroke-width="1.4"/>
+<text x="954" y="358" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#4a2d6e">HyperScience — Production</text>
+<text x="954" y="377" text-anchor="middle" font-size="9.5" fill="#5a6b82">Standalone GPU compute · own instance</text>
+<text x="954" y="393" text-anchor="middle" font-size="9.5" fill="#5a6b82">GPU + CPU + RAM + local NVMe bundled</text>
+<text x="954" y="411" text-anchor="middle" font-size="9" fill="#8a9cb5">no Kubernetes · no shared tenancy</text>
+
+<rect x="782" y="432" width="344" height="52" rx="7" fill="#fff" stroke="#8a6bb0" stroke-width="1.2" stroke-dasharray="5 3"/>
+<text x="954" y="452" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a2d6e">HyperScience — Test</text>
+<text x="954" y="470" text-anchor="middle" font-size="9.5" fill="#5a6b82">separate dedicated instance</text>
+
+<rect x="782" y="494" width="344" height="30" rx="5" fill="#fff6e5" stroke="#e0b060"/>
+<text x="954" y="508" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#8a6d1f">Shape options — dedicated, not shared</text>
+<text x="954" y="520" text-anchor="middle" font-size="8.5" fill="#8a6d1f">VM.GPU.A10.2 (2 GPU)  ·  BM.GPU.RTXPRO.8 (8 GPU, bare metal only)</text>
+
+<!-- HS storage -->
+<rect x="762" y="550" width="186" height="64" rx="8" fill="#f0e9f8" stroke="#b79fd6" stroke-width="1.2"/>
+<text x="855" y="571" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#5b3a87">Block Volume</text>
+<text x="855" y="589" text-anchor="middle" font-size="9.5" fill="#5a6b82">persistent data</text>
+<text x="855" y="604" text-anchor="middle" font-size="9.5" fill="#5a6b82">3.6 TB</text>
+<rect x="960" y="550" width="186" height="64" rx="8" fill="#f0e9f8" stroke="#b79fd6" stroke-width="1.2"/>
+<text x="1053" y="571" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#5b3a87">Object Storage</text>
+<text x="1053" y="589" text-anchor="middle" font-size="9.5" fill="#5a6b82">documents + backup</text>
+<text x="1053" y="604" text-anchor="middle" font-size="9.5" fill="#5a6b82">9 TB</text>
+
+<!-- Shared services -->
+<rect x="252" y="648" width="914" height="40" rx="8" fill="#eef4fa" stroke="#a9c7e8" stroke-width="1.2"/>
+<text x="330" y="666" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#3a6ea5">OCI Vault</text>
+<text x="330" y="679" text-anchor="middle" font-size="8" fill="#7b8794">secrets</text>
+<text x="490" y="666" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#3a6ea5">Container Registry</text>
+<text x="490" y="679" text-anchor="middle" font-size="8" fill="#7b8794">images</text>
+<text x="650" y="666" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#3a6ea5">IAM identity domains</text>
+<text x="650" y="679" text-anchor="middle" font-size="8" fill="#7b8794">compartment-scoped policies</text>
+<text x="850" y="666" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#3a6ea5">Logging &amp; Monitoring</text>
+<text x="850" y="679" text-anchor="middle" font-size="8" fill="#7b8794">observability</text>
+<text x="1050" y="666" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#3a6ea5">Cloud Guard</text>
+<text x="1050" y="679" text-anchor="middle" font-size="8" fill="#7b8794">posture management</text>
+
+<rect x="252" y="700" width="914" height="26" rx="6" fill="#e8f0e0" stroke="#a3c585"/>
+<text x="709" y="718" text-anchor="middle" font-size="10" font-weight="bold" fill="#375623">Encryption at rest &amp; in transit  ·  private subnets  ·  FedRAMP High / DISA IL4 inherited controls</text>
+
+<line x1="200" y1="445" x2="252" y2="205" stroke="#555" stroke-width="1.8" marker-end="url(#ar)" opacity="0.5"/>
+
+<!-- Legend -->
+<rect x="28" y="546" width="152" height="200" rx="10" fill="#fff" stroke="#c9d4e2" stroke-width="1.2"/>
+<text x="104" y="569" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f3864">Legend</text>
+<rect x="42" y="584" width="17" height="12" rx="3" fill="#1c7293"/><text x="66" y="594" font-size="9.5" fill="#333">DataWalk / OKE</text>
+<rect x="42" y="606" width="17" height="12" rx="3" fill="#5b3a87"/><text x="66" y="616" font-size="9.5" fill="#333">HyperScience / GPU</text>
+<line x1="42" y1="634" x2="59" y2="634" stroke="#c0392b" stroke-width="2.2" stroke-dasharray="5 3"/><text x="66" y="638" font-size="9.5" fill="#333">Isolation boundary</text>
+<text x="42" y="664" font-size="8.5" fill="#5a6b82">DataWalk runs only on</text>
+<text x="42" y="677" font-size="8.5" fill="#5a6b82">the OKE cluster.</text>
+<text x="42" y="695" font-size="8.5" fill="#5a6b82">HyperScience runs on its</text>
+<text x="42" y="708" font-size="8.5" fill="#5a6b82">own dedicated GPU</text>
+<text x="42" y="721" font-size="8.5" fill="#5a6b82">instance — it never joins</text>
+<text x="42" y="734" font-size="8.5" fill="#5a6b82">the cluster.</text>
+
+<text x="620" y="850" text-anchor="middle" font-size="10" fill="#8a9cb5">Separate compartments · separate runtimes · no shared cluster  —  RTX PRO on OCI is available only as BM.GPU.RTXPRO.8 (8-GPU bare metal); VM.GPU.A10.2 is the 2-GPU dedicated VM option</text>
+</svg>

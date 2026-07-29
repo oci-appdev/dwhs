@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="900" viewBox="0 0 1260 900" font-family="Arial, sans-serif">
+<defs>
+  <linearGradient id="dk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b3a52"/><stop offset="1" stop-color="#1f2b3e"/></linearGradient>
+  <linearGradient id="grn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a8f3c"/><stop offset="1" stop-color="#3a7530"/></linearGradient>
+  <linearGradient id="amb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c8891f"/><stop offset="1" stop-color="#a86f14"/></linearGradient>
+  <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.16"/></filter>
+  <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#4a5568"/></marker>
+</defs>
+<rect width="1260" height="900" fill="#f6f8fa"/>
+
+<text x="630" y="40" text-anchor="middle" font-size="23" font-weight="bold" fill="#1f2b3e">On-Premises Proposal — Cisco UCS X-Series with NVIDIA GPU</text>
+<text x="630" y="64" text-anchor="middle" font-size="13.5" fill="#5a6b82">Two-site build (East + West)  ·  RTX PRO 6000 Blackwell base  ·  H200 NVL optional upgrade  ·  as proposed by the on-premises team</text>
+
+<!-- ===================== EAST SITE ===================== -->
+<rect x="30" y="92" width="590" height="612" rx="14" fill="#ffffff" stroke="#2b3a52" stroke-width="2.2"/>
+<rect x="30" y="92" width="590" height="42" rx="14" fill="url(#dk)"/>
+<rect x="30" y="118" width="590" height="16" fill="url(#dk)"/>
+<text x="325" y="120" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">EAST SITE</text>
+
+<!-- chassis -->
+<rect x="52" y="152" width="546" height="286" rx="10" fill="#f2f5f9" stroke="#8fa3bd" stroke-width="1.6"/>
+<rect x="52" y="152" width="546" height="26" rx="10" fill="#5b7291"/><rect x="52" y="168" width="546" height="10" fill="#5b7291"/>
+<text x="325" y="171" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">1 × UCS X9508 Chassis</text>
+
+<!-- 4 compute nodes -->
+<text x="66" y="200" font-size="10.5" font-weight="bold" fill="#3d4f68">4 × UCSX-210C-M8 Compute Nodes</text>
+<g>
+<rect x="66" y="208" width="124" height="92" rx="7" fill="#fff" stroke="#5b7291" stroke-width="1.3"/>
+<text x="128" y="228" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2b3a52">Node 1</text>
+<text x="128" y="245" text-anchor="middle" font-size="8.5" fill="#5a6b82">2 × Intel 6527P</text>
+<text x="128" y="259" text-anchor="middle" font-size="8.5" fill="#5a6b82">3 GHz · 24 cores</text>
+<text x="128" y="275" text-anchor="middle" font-size="8.5" fill="#5a6b82">1,024 GB RAM</text>
+<text x="128" y="290" text-anchor="middle" font-size="8" fill="#8a9cb5">VIC 15230 2×100G</text>
+<rect x="200" y="208" width="124" height="92" rx="7" fill="#fff" stroke="#5b7291" stroke-width="1.3"/>
+<text x="262" y="228" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2b3a52">Node 2</text>
+<text x="262" y="245" text-anchor="middle" font-size="8.5" fill="#5a6b82">2 × Intel 6527P</text>
+<text x="262" y="259" text-anchor="middle" font-size="8.5" fill="#5a6b82">3 GHz · 24 cores</text>
+<text x="262" y="275" text-anchor="middle" font-size="8.5" fill="#5a6b82">1,024 GB RAM</text>
+<text x="262" y="290" text-anchor="middle" font-size="8" fill="#8a9cb5">VIC 15230 2×100G</text>
+<rect x="334" y="208" width="124" height="92" rx="7" fill="#fff" stroke="#5b7291" stroke-width="1.3"/>
+<text x="396" y="228" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2b3a52">Node 3</text>
+<text x="396" y="245" text-anchor="middle" font-size="8.5" fill="#5a6b82">2 × Intel 6527P</text>
+<text x="396" y="259" text-anchor="middle" font-size="8.5" fill="#5a6b82">3 GHz · 24 cores</text>
+<text x="396" y="275" text-anchor="middle" font-size="8.5" fill="#5a6b82">1,024 GB RAM</text>
+<text x="396" y="290" text-anchor="middle" font-size="8" fill="#8a9cb5">VIC 15230 2×100G</text>
+<rect x="468" y="208" width="124" height="92" rx="7" fill="#fff" stroke="#5b7291" stroke-width="1.3"/>
+<text x="530" y="228" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2b3a52">Node 4</text>
+<text x="530" y="245" text-anchor="middle" font-size="8.5" fill="#5a6b82">2 × Intel 6527P</text>
+<text x="530" y="259" text-anchor="middle" font-size="8.5" fill="#5a6b82">3 GHz · 24 cores</text>
+<text x="530" y="275" text-anchor="middle" font-size="8.5" fill="#5a6b82">1,024 GB RAM</text>
+<text x="530" y="290" text-anchor="middle" font-size="8" fill="#8a9cb5">VIC 15230 2×100G</text>
+</g>
+
+<!-- GPU sleds East -->
+<text x="66" y="326" font-size="10.5" font-weight="bold" fill="#3d4f68">2 × X580p PCIe GPU Sleds  —  X-Fabric (PCIe Gen 5)</text>
+<rect x="66" y="334" width="258" height="94" rx="8" fill="#eaf5e6" stroke="#4a8f3c" stroke-width="1.6"/>
+<rect x="66" y="334" width="258" height="22" rx="8" fill="url(#grn)"/><rect x="66" y="346" width="258" height="10" fill="url(#grn)"/>
+<text x="195" y="350" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">GPU SLED 1 — BASE</text>
+<text x="195" y="378" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2f5f26">2 × RTX PRO 6000</text>
+<text x="195" y="394" text-anchor="middle" font-size="10" fill="#3d5c33">Blackwell · 96 GB GDDR7 each</text>
+<text x="195" y="412" text-anchor="middle" font-size="9" fill="#6b7f60">192 GB total GPU memory</text>
+
+<rect x="334" y="334" width="258" height="94" rx="8" fill="#fdf6e8" stroke="#c8891f" stroke-width="1.6" stroke-dasharray="6 4"/>
+<rect x="334" y="334" width="258" height="22" rx="8" fill="url(#amb)"/><rect x="334" y="346" width="258" height="10" fill="url(#amb)"/>
+<text x="463" y="350" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">GPU SLED 2 — OPTIONAL</text>
+<text x="463" y="378" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#8a5f10">2 × H200 NVL</text>
+<text x="463" y="394" text-anchor="middle" font-size="10" fill="#8a6d1f">141 GB HBM3e each · NVLink</text>
+<text x="463" y="412" text-anchor="middle" font-size="9" fill="#a08850">282 GB total · optional SKU</text>
+
+<!-- East totals -->
+<rect x="52" y="452" width="546" height="60" rx="8" fill="#eef2f7" stroke="#8fa3bd" stroke-width="1.2"/>
+<text x="70" y="472" font-size="10.5" font-weight="bold" fill="#2b3a52">East site totals</text>
+<text x="70" y="490" font-size="10" fill="#5a6b82">192 CPU cores  ·  4,096 GB RAM  ·  2 × RTX PRO 6000 (96 GB each)</text>
+<text x="70" y="505" font-size="9.5" fill="#8a9cb5">Optional: 2 × H200 NVL 141 GB  ·  2 TB RAM upgrade per node</text>
+
+<!-- East storage/network -->
+<rect x="52" y="526" width="264" height="66" rx="8" fill="#fff" stroke="#8fa3bd" stroke-width="1.2"/>
+<text x="184" y="547" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2b3a52">Local Storage</text>
+<text x="184" y="565" text-anchor="middle" font-size="9.5" fill="#5a6b82">NVMe / SSD per node</text>
+<text x="184" y="580" text-anchor="middle" font-size="9" fill="#8a9cb5">DataWalk + HyperScience data</text>
+<rect x="334" y="526" width="264" height="66" rx="8" fill="#fff" stroke="#8fa3bd" stroke-width="1.2"/>
+<text x="466" y="547" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2b3a52">Site Networking</text>
+<text x="466" y="565" text-anchor="middle" font-size="9.5" fill="#5a6b82">VIC 15230 · 2 × 100G MLOM</text>
+<text x="466" y="580" text-anchor="middle" font-size="9" fill="#8a9cb5">uplink to government network</text>
+
+<rect x="52" y="606" width="546" height="30" rx="6" fill="#e8f0e0" stroke="#a3c585"/>
+<text x="325" y="626" text-anchor="middle" font-size="10" font-weight="bold" fill="#375623">Customer-owned · customer-operated · accreditation is customer responsibility</text>
+
+<text x="325" y="668" text-anchor="middle" font-size="11" font-weight="bold" fill="#2b3a52">Workloads: DataWalk (CPU) + HyperScience (GPU)</text>
+<text x="325" y="686" text-anchor="middle" font-size="9.5" fill="#8a9cb5">GPU sleds serve HyperScience document processing</text>
+
+<!-- ===================== WEST SITE ===================== -->
+<rect x="640" y="92" width="590" height="612" rx="14" fill="#ffffff" stroke="#2b3a52" stroke-width="2.2"/>
+<rect x="640" y="92" width="590" height="42" rx="14" fill="url(#dk)"/>
+<rect x="640" y="118" width="590" height="16" fill="url(#dk)"/>
+<text x="935" y="120" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">WEST SITE</text>
+
+<!-- Fabric interconnects (West only) -->
+<rect x="662" y="150" width="546" height="42" rx="8" fill="#e7edf5" stroke="#5b7291" stroke-width="1.4"/>
+<text x="935" y="168" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b3a52">2 × Fabric Interconnect 6536</text>
+<text x="935" y="184" text-anchor="middle" font-size="9" fill="#5a6b82">management and data plane for the UCS domain</text>
+
+<rect x="662" y="202" width="546" height="240" rx="10" fill="#f2f5f9" stroke="#8fa3bd" stroke-width="1.6"/>
+<rect x="662" y="202" width="546" height="26" rx="10" fill="#5b7291"/><rect x="662" y="218" width="546" height="10" fill="#5b7291"/>
+<text x="935" y="221" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">1 × UCS X9508 Chassis</text>
+<text x="676" y="248" font-size="10.5" font-weight="bold" fill="#3d4f68">4 × UCSX-210C-M8 Compute Nodes</text>
+<g>
+<rect x="676" y="256" width="124" height="80" rx="7" fill="#fff" stroke="#5b7291" stroke-width="1.3"/>
+<text x="738" y="275" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2b3a52">Node 1</text>
+<text x="738" y="292" text-anchor="middle" font-size="8.5" fill="#5a6b82">2 × Intel 6527P</text>
+<text x="738" y="306" text-anchor="middle" font-size="8.5" fill="#5a6b82">3 GHz · 24 cores</text>
+<text x="738" y="322" text-anchor="middle" font-size="8.5" fill="#5a6b82">1,024 GB RAM</text>
+<rect x="810" y="256" width="124" height="80" rx="7" fill="#fff" stroke="#5b7291" stroke-width="1.3"/>
+<text x="872" y="275" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2b3a52">Node 2</text>
+<text x="872" y="292" text-anchor="middle" font-size="8.5" fill="#5a6b82">2 × Intel 6527P</text>
+<text x="872" y="306" text-anchor="middle" font-size="8.5" fill="#5a6b82">3 GHz · 24 cores</text>
+<text x="872" y="322" text-anchor="middle" font-size="8.5" fill="#5a6b82">1,024 GB RAM</text>
+<rect x="944" y="256" width="124" height="80" rx="7" fill="#fff" stroke="#5b7291" stroke-width="1.3"/>
+<text x="1006" y="275" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2b3a52">Node 3</text>
+<text x="1006" y="292" text-anchor="middle" font-size="8.5" fill="#5a6b82">2 × Intel 6527P</text>
+<text x="1006" y="306" text-anchor="middle" font-size="8.5" fill="#5a6b82">3 GHz · 24 cores</text>
+<text x="1006" y="322" text-anchor="middle" font-size="8.5" fill="#5a6b82">1,024 GB RAM</text>
+<rect x="1078" y="256" width="124" height="80" rx="7" fill="#fff" stroke="#5b7291" stroke-width="1.3"/>
+<text x="1140" y="275" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2b3a52">Node 4</text>
+<text x="1140" y="292" text-anchor="middle" font-size="8.5" fill="#5a6b82">2 × Intel 6527P</text>
+<text x="1140" y="306" text-anchor="middle" font-size="8.5" fill="#5a6b82">3 GHz · 24 cores</text>
+<text x="1140" y="322" text-anchor="middle" font-size="8.5" fill="#5a6b82">1,024 GB RAM</text>
+</g>
+<text x="676" y="358" font-size="10.5" font-weight="bold" fill="#3d4f68">2 × X580p PCIe GPU Sleds</text>
+<rect x="676" y="366" width="258" height="66" rx="8" fill="#eaf5e6" stroke="#4a8f3c" stroke-width="1.6"/>
+<rect x="676" y="366" width="258" height="20" rx="8" fill="url(#grn)"/><rect x="676" y="376" width="258" height="10" fill="url(#grn)"/>
+<text x="805" y="381" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#fff">GPU SLED 1 — BASE</text>
+<text x="805" y="404" text-anchor="middle" font-size="11" font-weight="bold" fill="#2f5f26">2 × RTX PRO 6000</text>
+<text x="805" y="421" text-anchor="middle" font-size="9.5" fill="#3d5c33">Blackwell · 96 GB each</text>
+<rect x="944" y="366" width="258" height="66" rx="8" fill="#fdf6e8" stroke="#c8891f" stroke-width="1.6" stroke-dasharray="6 4"/>
+<rect x="944" y="366" width="258" height="20" rx="8" fill="url(#amb)"/><rect x="944" y="376" width="258" height="10" fill="url(#amb)"/>
+<text x="1073" y="381" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#fff">GPU SLED 2 — OPTIONAL</text>
+<text x="1073" y="404" text-anchor="middle" font-size="11" font-weight="bold" fill="#8a5f10">2 × H200 NVL</text>
+<text x="1073" y="421" text-anchor="middle" font-size="9.5" fill="#8a6d1f">141 GB each · NVLink</text>
+
+<rect x="662" y="452" width="546" height="60" rx="8" fill="#eef2f7" stroke="#8fa3bd" stroke-width="1.2"/>
+<text x="680" y="472" font-size="10.5" font-weight="bold" fill="#2b3a52">West site totals</text>
+<text x="680" y="490" font-size="10" fill="#5a6b82">192 CPU cores  ·  4,096 GB RAM  ·  2 × RTX PRO 6000 (96 GB each)</text>
+<text x="680" y="505" font-size="9.5" fill="#8a9cb5">Optional: 2 × H200 NVL 141 GB  ·  2 TB RAM upgrade per node</text>
+
+<rect x="662" y="526" width="264" height="66" rx="8" fill="#fff" stroke="#8fa3bd" stroke-width="1.2"/>
+<text x="794" y="547" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2b3a52">Local Storage</text>
+<text x="794" y="565" text-anchor="middle" font-size="9.5" fill="#5a6b82">NVMe / SSD per node</text>
+<text x="794" y="580" text-anchor="middle" font-size="9" fill="#8a9cb5">replica / DR copy</text>
+<rect x="944" y="526" width="264" height="66" rx="8" fill="#fff" stroke="#8fa3bd" stroke-width="1.2"/>
+<text x="1076" y="547" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2b3a52">Site Networking</text>
+<text x="1076" y="565" text-anchor="middle" font-size="9.5" fill="#5a6b82">FI 6536 · VIC 15230 2 × 100G</text>
+<text x="1076" y="580" text-anchor="middle" font-size="9" fill="#8a9cb5">uplink to government network</text>
+
+<rect x="662" y="606" width="546" height="30" rx="6" fill="#e8f0e0" stroke="#a3c585"/>
+<text x="935" y="626" text-anchor="middle" font-size="10" font-weight="bold" fill="#375623">Customer-owned · customer-operated · accreditation is customer responsibility</text>
+
+<text x="935" y="668" text-anchor="middle" font-size="11" font-weight="bold" fill="#2b3a52">Workloads: DataWalk (CPU) + HyperScience (GPU)</text>
+<text x="935" y="686" text-anchor="middle" font-size="9.5" fill="#8a9cb5">second site provides redundancy / DR</text>
+
+<!-- Inter-site link -->
+<line x1="620" y1="400" x2="640" y2="400" stroke="#4a5568" stroke-width="2.4"/>
+<rect x="566" y="716" width="128" height="30" rx="6" fill="#fff" stroke="#4a5568" stroke-width="1.2"/>
+<text x="630" y="736" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#4a5568">Inter-site replication</text>
+<line x1="325" y1="704" x2="325" y2="731" stroke="#4a5568" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="935" y1="704" x2="935" y2="731" stroke="#4a5568" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="325" y1="731" x2="566" y2="731" stroke="#4a5568" stroke-width="2"/>
+<line x1="694" y1="731" x2="935" y2="731" stroke="#4a5568" stroke-width="2"/>
+
+<!-- Combined summary -->
+<rect x="30" y="766" width="1200" height="72" rx="10" fill="#eef2f7" stroke="#8fa3bd" stroke-width="1.4"/>
+<text x="50" y="788" font-size="12" font-weight="bold" fill="#2b3a52">Combined two-site build (East + West)</text>
+<text x="50" y="810" font-size="10.5" fill="#5a6b82">8 compute nodes  ·  384 CPU cores  ·  8,192 GB RAM  ·  4 × RTX PRO 6000 Blackwell 96 GB (base)  ·  2 UCS chassis  ·  2 fabric interconnects  ·  4 GPU sleds</text>
+<text x="50" y="828" font-size="10.5" fill="#8a6d1f">Optional upgrades: 4 × H200 NVL 141 GB  ·  2 TB RAM per node  —  priced separately from the base configuration</text>
+
+<!-- Legend -->
+<rect x="1000" y="766" width="222" height="72" rx="8" fill="#fff" stroke="#c9d4e2" stroke-width="1.2"/>
+<rect x="1014" y="780" width="16" height="11" rx="3" fill="#4a8f3c"/><text x="1038" y="789" font-size="9" fill="#333">RTX PRO 6000 — base</text>
+<rect x="1014" y="798" width="16" height="11" rx="3" fill="#c8891f"/><text x="1038" y="807" font-size="9" fill="#333">H200 NVL — optional</text>
+<rect x="1014" y="816" width="16" height="11" rx="3" fill="#5b7291"/><text x="1038" y="825" font-size="9" fill="#333">Compute / chassis</text>
+</svg>
