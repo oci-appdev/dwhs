@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-08-20T16:05:00.000Z" agent="ChatGPT Work" version="24.7.17" type="device">
+  <diagram id="dwhs-oci-simple-bw" name="Simplified Architecture" compressed="false">
+    <mxGraphModel dx="1400" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="760" math="0" shadow="0" libs="kubernetes">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="DataWalk and Hyperscience on OCI" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=24;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="35" y="20" width="700" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="Private OKE deployment using VM.GPU.A10.2" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=13;fontColor=#444444;" vertex="1" parent="1">
+          <mxGeometry x="35" y="56" width="600" height="24" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="users-icon" value="" style="shape=actor;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="52" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="users-label" value="Users / Administrators" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="35" y="300" width="145" height="35" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="source-icon" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;size=15;" vertex="1" parent="1">
+          <mxGeometry x="70" y="445" width="72" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="source-label" value="Enterprise data sources" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="525" width="155" height="35" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="region" value="OCI GOVERNMENT CLOUD REGION" style="swimlane;html=1;rounded=0;startSize=36;horizontal=1;container=1;collapsible=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontFamily=Arial;fontColor=#000000;fontSize=14;fontStyle=1;swimlaneFillColor=#F2F2F2;" vertex="1" parent="1">
+          <mxGeometry x="230" y="105" width="1130" height="600" as="geometry"/>
+        </mxCell>
+        <mxCell id="oci-mark" value="OCI" style="shape=cloud;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontFamily=Arial;fontColor=#000000;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1265" y="108" width="65" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="vcn" value="PRIVATE VCN" style="swimlane;html=1;rounded=0;startSize=34;horizontal=1;container=1;collapsible=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;dashed=1;dashPattern=8 5;fontFamily=Arial;fontColor=#000000;fontSize=13;fontStyle=1;swimlaneFillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="270" y="160" width="810" height="490" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="lb-icon" value="LB" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontFamily=Arial;fontColor=#000000;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="205" width="58" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lb-label" value="Private Load Balancer" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=11;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="325" y="260" width="150" height="28" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="bastion-icon" value="B" style="hexagon;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontFamily=Arial;fontColor=#000000;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="805" y="205" width="58" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="bastion-label" value="OCI Bastion" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=11;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="755" y="260" width="155" height="28" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="oke" value="ORACLE KUBERNETES ENGINE (PRIVATE OKE)" style="swimlane;html=1;rounded=0;startSize=36;horizontal=1;container=1;collapsible=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontFamily=Arial;fontColor=#000000;fontSize=13;fontStyle=1;swimlaneFillColor=#F2F2F2;" vertex="1" parent="1">
+          <mxGeometry x="305" y="315" width="740" height="270" as="geometry"/>
+        </mxCell>
+        <mxCell id="k8s-symbol" value="" style="sketch=0;html=1;dashed=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;points=[[0.5,0,0],[1,0.5,0],[0.5,1,0],[0,0.5,0]];shape=mxgraph.kubernetes.icon;prIcon=deploy;" vertex="1" parent="1">
+          <mxGeometry x="990" y="320" width="30" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="system-node" value="&lt;b&gt;System Node Pool&lt;/b&gt;&lt;br&gt;&lt;br&gt;CPU nodes&lt;br&gt;Ingress / DNS / operators" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="335" y="385" width="200" height="145" as="geometry"/>
+        </mxCell>
+        <mxCell id="system-symbol" value="" style="sketch=0;html=1;dashed=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;points=[[0.5,0,0],[1,0.5,0],[0.5,1,0],[0,0.5,0]];shape=mxgraph.kubernetes.icon;prIcon=node;" vertex="1" parent="1">
+          <mxGeometry x="350" y="400" width="34" height="34" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="datawalk-node" value="&lt;b&gt;DataWalk Node Pool&lt;/b&gt;&lt;br&gt;&lt;br&gt;VM.GPU.A10.2&lt;br&gt;2 × NVIDIA A10 per node" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontFamily=Arial;fontColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="565" y="385" width="205" height="145" as="geometry"/>
+        </mxCell>
+        <mxCell id="datawalk-symbol" value="GPU" style="shape=mxgraph.kubernetes.icon;prIcon=node;sketch=0;html=1;dashed=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontFamily=Arial;fontColor=#000000;fontSize=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="400" width="36" height="36" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="hyperscience-node" value="&lt;b&gt;Hyperscience Node Pool&lt;/b&gt;&lt;br&gt;&lt;br&gt;VM.GPU.A10.2&lt;br&gt;Training / inference" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontFamily=Arial;fontColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="800" y="385" width="210" height="145" as="geometry"/>
+        </mxCell>
+        <mxCell id="hyperscience-symbol" value="GPU" style="shape=mxgraph.kubernetes.icon;prIcon=node;sketch=0;html=1;dashed=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontFamily=Arial;fontColor=#000000;fontSize=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="400" width="36" height="36" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="private-note" value="Private subnets • no public worker IPs • separate application namespaces" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=10;fontColor=#000000;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="355" y="602" width="620" height="25" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="services" value="OCI SERVICES" style="swimlane;html=1;rounded=0;startSize=34;horizontal=1;container=1;collapsible=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontColor=#000000;fontSize=13;fontStyle=1;swimlaneFillColor=#F2F2F2;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="160" width="205" height="490" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="registry-symbol" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="220" width="48" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="registry-label" value="Container Registry" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=11;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1192" y="225" width="108" height="35" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="vault-symbol" value="K" style="hexagon;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontColor=#000000;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="300" width="48" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="vault-label" value="Vault / Keys" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=11;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1192" y="305" width="108" height="32" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="db-symbol" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="380" width="48" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="db-label" value="SQL Database" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=11;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1192" y="388" width="108" height="32" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="storage-symbol" value="" style="shape=mxgraph.flowchart.stored_data;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="465" width="48" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="storage-label" value="Block / File / Object Storage" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=11;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1192" y="466" width="108" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="monitor-symbol" value="M" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontColor=#000000;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="550" width="45" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="monitor-label" value="Monitoring / Logging" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=11;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1192" y="554" width="108" height="38" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="users-icon" target="lb-icon">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1.5;exitX=0.5;exitY=1;entryX=0.2;entryY=0;" edge="1" parent="1" source="lb-icon" target="oke">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.65;" edge="1" parent="1" source="source-icon" target="oke">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1.5;exitX=1;exitY=0.55;entryX=0;entryY=0.55;" edge="1" parent="1" source="oke" target="services">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1.5;dashed=1;exitX=0.5;exitY=1;entryX=0.72;entryY=0;" edge="1" parent="1" source="bastion-icon" target="oke">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
