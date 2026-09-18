@@ -27,7 +27,37 @@ network itself.
   approvals remain **network-team prerequisites**. Attaching the DRG alone does not
   establish end-to-end connectivity.
 
-## Running it from ORM via GitHub
+## Running it from ORM
+
+### Option A — ZIP upload (no GitHub link needed)
+
+[`oci-vm-poc.zip`](./oci-vm-poc.zip) in this folder is pre-built and ready to upload —
+`main.tf` sits at the archive root, which is what ORM requires.
+
+1. Download `oci-vm-poc.zip` from this folder (use the file's **Download** button on
+   GitHub, not "Download repository ZIP" — that wraps everything in a `dwhs-main/`
+   folder and breaks the upload).
+2. OCI Console → **Developer Services → Resource Manager → Stacks → Create stack**.
+3. Origin: **My configuration** → Stack configuration: **.zip file** → select
+   `oci-vm-poc.zip`.
+4. Select a Terraform version **≥ 1.2** (the config requires `lifecycle { precondition }`).
+5. Name the stack and pick the compartment the *stack* lives in (separate from
+   `compartment_ocid` below, which is where the VMs are created).
+6. Fill in the variables below, then **Plan** → review resources and cost → **Apply**.
+
+> Use a **separate stack per application/environment**. Each stack creates a new VCN,
+> so allocate approved, non-overlapping CIDRs.
+
+Updating the config later means re-uploading a new ZIP under the stack's
+**Edit → Stack configuration** — there's no auto-pull with this option.
+
+To rebuild the ZIP yourself after editing `main.tf` (run from this directory):
+
+```powershell
+Compress-Archive -Path .\main.tf -DestinationPath .\oci-vm-poc.zip -Force
+```
+
+### Option B — source directly from this GitHub repository
 
 1. In the OCI Console: **Developer Services → Resource Manager → Configuration Source Providers** —
    add a GitHub provider with a personal access token that can read this repository.
@@ -39,20 +69,11 @@ network itself.
    terraform/oci-vm-foundation
    ```
 
-4. Select a Terraform version **≥ 1.2** (the config requires `lifecycle { precondition }`).
+4. Select a Terraform version **≥ 1.2**.
 5. Fill in the variables below, then **Plan** → review resources and cost → **Apply**.
 
-> Use a **separate stack per application/environment**. Each stack creates a new VCN,
-> so allocate approved, non-overlapping CIDRs.
-
-### Alternative: ZIP upload
-
-If you would rather not wire up a source provider, zip `main.tf` with the file at the
-archive root and use **My configuration → .zip file**:
-
-```powershell
-Compress-Archive -Path .\main.tf -DestinationPath .\oci-vm-poc.zip
-```
+This option auto-pulls on **Update Stack** when the source branch changes — useful if
+you're iterating on `main.tf` directly in the repo.
 
 ## Variables
 

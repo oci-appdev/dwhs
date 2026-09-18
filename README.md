@@ -13,5 +13,7 @@
 
 - [OCI VM Foundation (Resource Manager stack)](./terraform/oci-vm-foundation/) — private-only VCN,
   subnet, service gateway, NSG (SSH restricted to an approved jump-host CIDR), optional DRG
-  attachment and on-prem routes, and E6 Flex / A10.2 VMs with optional block volumes. Deployable
-  from ORM directly against this repository (working directory `terraform/oci-vm-foundation`).
+  attachment and on-prem routes, and E6 Flex / A10.2 VMs with optional block volumes.
+  Deployable in ORM either by uploading the pre-built
+  [`oci-vm-poc.zip`](./terraform/oci-vm-foundation/oci-vm-poc.zip) directly (no GitHub link
+  needed), or by sourcing this repository (working directory `terraform/oci-vm-foundation`).
