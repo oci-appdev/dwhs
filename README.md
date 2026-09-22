@@ -7,7 +7,7 @@
 
 ## Azure POC Documentation
 
-- [OCI to Azure POC Migration Plan and Timeline](./Azure_OCI_to_Azure_POC_Migration_Plan_and_Timeline.docx) — Azure Government target design, DataWalk CPU and Hyperscience A10 GPU planning basis, eight-week execution schedule, acceptance criteria, responsibilities, risks, and ETA.
+- [OCI to Azure POC Migration Plan and Timeline](./Azure_OCI_to_Azure_POC_Migration_Plan_and_Timeline.docx) — Azure Government target design, OCI-to-Azure terminology crosswalk, DataWalk CPU and Hyperscience A10 GPU planning basis, eight-week execution schedule, acceptance criteria, responsibilities, risks, and ETA.
 
 ## Migration Runbooks
 
