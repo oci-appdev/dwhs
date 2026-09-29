@@ -4,6 +4,7 @@
 
 - [OCI DataWalk and Hyperscience network and compartment architecture](./diagrams/OCI_DW_HS_Network_Compartments.md) — FastConnect/DRG connectivity, SCCA inspection, and separate DataWalk Dev/Test/Prod and Hyperscience Dev/Prod compartments.
 - [Editable OCI E6 and A10.2 architecture](./OCI_DW_E6_HS_A10_2_Architecture.drawio) — Draw.io source for the compute and environment views.
+- [Editable Azure DataWalk and Hyperscience high-level architecture](./Azure_DataWalk_Hyperscience_High_Level_Architecture.drawio) — Two-page Draw.io design with embedded Azure icons, ExpressRoute hub-and-spoke connectivity, dedicated DataWalk CPU and Hyperscience A10 GPU clusters, shared platform services, and production/non-production separation.
 
 ## Azure POC Documentation
 
