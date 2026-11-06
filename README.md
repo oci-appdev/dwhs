@@ -1,5 +1,9 @@
 # dwhs
 
+## Current OCI POC installation guide
+
+- [Three-VM DataWalk Kubernetes and Hyperscience GPU Podman installation](./docs/POC_3VM_Kubernetes_and_Hyperscience_Podman_Install.md) — 29 operator steps for one shared Dev/Test cluster (one control-plane VM plus two workers; optional workload scheduling on the control plane) and one separate Hyperscience GPU VM. Includes private IPs, firewall flows, containerd/kubeadm/Flannel, storage checks, Podman/NVIDIA setup and vendor handoff. This is the current three-VM DataWalk POC procedure; older documents include alternative four-VM and OKE designs. Runtime deployment remains unverified.
+
 ## Architecture
 
 - [OCI DataWalk and Hyperscience network and compartment architecture](./diagrams/OCI_DW_HS_Network_Compartments.md) — FastConnect/DRG connectivity, SCCA inspection, and separate DataWalk Dev/Test/Prod and Hyperscience Dev/Prod compartments.
